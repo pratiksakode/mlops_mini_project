@@ -1,4 +1,4 @@
 [core]
     remote = myremote
 ['remote "myremote"']
-    url = C:\Users\Lenovo\AppData\Local\Temp\Storage\mlops_mini_project
+    url = s3://awsmlopsbucketproject
