@@ -13,4 +13,4 @@ RUN python -m nltk.downloader stopwords wordnet
 EXPOSE 5000
 
 #CMD [ "python", "-m" ,"flask", "run", "--host=0.0.0.0" ]
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "app.app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
