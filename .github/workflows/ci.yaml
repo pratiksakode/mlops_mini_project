@@ -63,11 +63,11 @@ jobs:
 
       - name: Tag Docker image
         run: |
-          docker tag mlops_ecr:latest 529088281210.dkr.ecr.eu-north-1.amazonaws.com/mlops_ecr:latest
+          docker tag mlops_ecr:latest 529088281210.dkr.ecr.eu-north-1.amazonaws.com/mlops_ecr:v4
 
       - name: Push Docker image to AWS ECR
         run: |
-          docker push 529088281210.dkr.ecr.eu-north-1.amazonaws.com/mlops_ecr:latest      
+          docker push 529088281210.dkr.ecr.eu-north-1.amazonaws.com/mlops_ecr:v4    
 
       # Zip the required files
       - name: Zip files for deployment
